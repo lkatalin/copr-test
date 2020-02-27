@@ -6,6 +6,7 @@ License:        Apache-2.0
 
 Source0: 	https://github.com/lkatalin/copr-test/blob/master/hello.tar
 
+# test
 #%{?systemd_requires}
 #BuildRequires:  systemd
 #BuildRequires:  gcc
