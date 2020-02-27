@@ -10,7 +10,7 @@ Source0: 	https://github.com/lkatalin/copr-test/blob/master/hello.tar
 This contains the Intel SGX SDK's debugger.
 
 %prep
-%autosetup -n hello-%{version}
+%autosetup -n %{name}-master
 
 # Remove .gitignore files in examples
 find contrib/ -type f -name ".gitignore" -exec rm "{}" \;
