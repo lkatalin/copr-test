@@ -6,11 +6,11 @@ License:        Apache-2.0
 
 Source0: 	https://github.com/lkatalin/copr-test/blob/master/hello.tar
 
-%{?systemd_requires}
-BuildRequires:  systemd
-BuildRequires:  gcc
-BuildRequires:  make
-BuildRequires:  pkgconfig(libmnl)
+#%{?systemd_requires}
+#BuildRequires:  systemd
+#BuildRequires:  gcc
+#BuildRequires:  make
+#BuildRequires:  pkgconfig(libmnl)
 
 #Provides:       %{name}-kmod-common = %{version}
 #Requires:       %{name}-kmod >= %{version}
@@ -32,15 +32,15 @@ find contrib/ -type f -name ".gitignore" -exec rm "{}" \;
 
 %install
 %make_install -C src/tools \
-        WITH_BASHCOMPLETION=yes \
-        WITH_SYSTEMDUNITS=yes
+#        WITH_BASHCOMPLETION=yes \
+#        WITH_SYSTEMDUNITS=yes
 
 
 %files
 %doc README.md
 %license COPYING
 %{_bindir}/intel-sgx-debugger
-%{_sysconfdir}/intel-sgx-debugger
+#%{_sysconfdir}/intel-sgx-debugger
 
 
 %changelog
