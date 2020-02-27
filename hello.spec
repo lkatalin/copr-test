@@ -4,7 +4,7 @@ Version:        0.0.20200227
 Release:        1%{?dist}
 License:        Apache-2.0
 
-Source0: 	TBD
+Source0: 	https://github.com/lkatalin/copr-test/blob/master/hello.tar
 
 %{?systemd_requires}
 BuildRequires:  systemd
