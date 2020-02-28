@@ -15,7 +15,7 @@ This contains the Intel SGX SDK's debugger.
 %autosetup -n hello
 
 %install
-%make_install -C src/tools
+%make_install -C
 
 
 %files
