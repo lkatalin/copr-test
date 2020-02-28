@@ -12,7 +12,7 @@ Requires: gcc
 This contains the Intel SGX SDK's debugger.
 
 %prep
-%autosetup -n hello-master
+%autosetup -n hello
 
 %install
 %make_install -C src/tools
